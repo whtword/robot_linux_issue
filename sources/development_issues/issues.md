@@ -91,7 +91,19 @@ Windows和Ubuntu使用相同固定IP：
 ### 经验
 
 固定IP不要与其他设备冲突。机器人开发环境中，如果有Ubuntu主机、Windows电脑、Jetson、工控机、电机控制器等设备，需要统一规划IP地址。
+## 2026-08-18 SCP从Ubuntu拉取文件到Windows
 
+
+### 命令
+
+Windows PowerShell执行：
+
+```bash
+scp -r wang@172.20.10.5:/home/wang/ros2damiaoarm .
+作用
+将远程Ubuntu服务器上的整个目录复制到当前Windows目录。
+命令结构：
+scp -r 用户名@远程IP:远程文件路径 本地目标路径
 
 ## YYYY-MM-DD 问题名称
 
